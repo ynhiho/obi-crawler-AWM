@@ -7,10 +7,10 @@ var c = new Crawler({
     if (error) {
       console.log(error);
     } else {
-      const products = [];
+      let products = [];
       var $ = res.$;
 
-      prodcts = setProducts($, products);
+      products = setProducts($, products);
 
       console.log(products);
       console.log(products.length);
